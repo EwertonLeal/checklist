@@ -26,14 +26,14 @@ Marrom: #A65132
 /*Header*/
 
 #banner {
-    height: 400px;
+    padding: 2rem 4rem;
     background: linear-gradient(rgba(0, 0, 0, 0.850), rgba(0, 0, 0, 0.850)), url("../imagens/img-6.jpg");
     background-position: center;
     background-size: cover;
-    height: 85vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* height: 85vh; */
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
     color: var(--cor3);
 }
 
@@ -59,8 +59,7 @@ Marrom: #A65132
 
 #form {
     background-color: var(--cor1);
-    padding: 2em;
-    max-width: 22%;
+    padding: 2rem 1rem 1rem;
 }
 
 #form p {
@@ -93,17 +92,19 @@ Marrom: #A65132
 }
 
 .btn {
-    background-color: var(--cor2);
-    color: var(--cor3);
+    background-color: var(--cor2) !important;
+    color: var(--cor3) !important;
     text-transform: uppercase;
     width: 100%;
     border: none;
     padding: 12px;
     cursor: pointer;
     opacity: 0.8; 
+
 }
 
 .btn:hover {
+    transition: .3s ease-in-out;
     opacity: 1;
 }
 
@@ -158,7 +159,7 @@ Marrom: #A65132
 /*Sobre*/
 
 #about {
-    height: 500px;
+    /* height: 500px; */
     background: linear-gradient(rgba(0, 0, 0, 0.935), rgba(0, 0, 0, 0.935)), url("../imagens/img-1.jpg");
     background-position: center;
     background-size: cover;
@@ -271,15 +272,23 @@ a {
 }
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #banner {
-      height: 60vh;
+      /* height: 60vh; */
     }
+
+    #disclaimer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #form {
-      max-width: 40%;
+      /* max-width: 40%; */
     }
     .servicos {
       flex-direction: column;
+      align-items: center;
     }
 
     .servico {
@@ -289,17 +298,27 @@ a {
   }
   
   /* Smartphone */
-  @media (max-width: 480px) {
+  @media (max-width: 575px) {
     #banner {
-      height: 50vh;
+      /* height: 50vh; */
     }
     #form {
-      max-width: 90%;
+      /* max-width: 90%; */
       padding: 1em;
     }
     #disclaimer h2 {
       font-size: 2em;
+      text-align: center !important;
     }
+
+    #about h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .description {
+        text-align: center;
+    }
+
     .servicos {
       padding: 2em;
     }

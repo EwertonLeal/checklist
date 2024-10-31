@@ -10,76 +10,124 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
- <header id="banner">
-    <div id="disclaimer">
-        <h2>Checklist Vistorias</h2>
-        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elite.</p>
-    </div>
-    <div id="form">
-        <p>Preencha o Formulário para mais informações</p>
-        <form>
-            <div class="form-group">
-                <label for="name">Nome</label>
-                <input type="text" name="name" placeholder="Digite seu nome">
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" placeholder="Digite seu e-mail">
-            </div>
-            <div class="form-group">
-                <label for="name">Nome</label>
-                <input type="text" name="phone" placeholder="Número de Whatsapp">
-            </div>
-            <div class="form-group">
-                <label for="interest">Motivo do contato</label>
-                <input id="box" type="text" name="interest" placeholder="Explique o motivo do contato">
-            </div>
-            <input type="submit" class="btn" value="Enviar">
-        </form>
-    </div>
- </header> 
- <section id="servicos_">
-    <h2>Nossos serviços:</h2>
-    <div class="servicos">
-        <div class="servico">
-            <div id="servico-1" class="servico-img"></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="servico">
-            <div id="servico-2" class="servico-img"></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="servico">
-            <div id="servico-3" class="servico-img"></div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
-    </div>
- </section>
- <section id="about">
-    <div id="about">
-        <h2>Sobre a empresa:</h2>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita ratione impedit numquam fugiat illo deserunt cupiditate nulla magnam cumque, saepe soluta magni dolores. Adipisci autem sed temporibus quae? Itaque!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-             </p>
-             <section id="cta">
-                <button class="btn1"><a href="http://wa.me/5511965007081" target="_blank">Saiba mais</a></button>
-              </section>
-    </div>
- </section>
+    
+    <header id="banner">
 
- <div class="buttonzap">
-    <a href="https://api.whatsapp.com/send?phone=5511965007081&" class="icon" target="_blank"><i class="fab fa-whatsapp">
-    </i>
-    </a>
-</div>
+        <div class="col-12">
+            <div class="row">
+                <div id="disclaimer" class="col-lg-7 col-md-12 align-self-center">
+                    <h2>Checklist Vistorias</h2>
+                    <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elite.</p>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div id="form">
+                        <p>Preencha o Formulário para mais informações</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Digite seu nome">
+                            </div>
 
- <footer id="footer">
-    <h3>Contato:</h3>
-    <p><span>E-mail:</span> contato@checklistvistorias.eng.br</p>
-    <p><span>Telefone:</span> (11) 96500-7081</p>
-    <p><span>CNPJ:</span> 55.555.555/0001-66</p>
- </footer>
+                            <div class="row">
+                                <div class="form-group col-6">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                                </div>
+                                <div class="form-group col-6">
+                                    <label for="name">Tel.</label>
+                                    <input type="text" name="phone" id="phone" placeholder="Número de Whatsapp">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="interest">Motivo do contato</label>
+                                <input id="box" type="text" name="interest" id="interest" placeholder="Explique o motivo do contato">
+                            </div>
+
+                            <input type="submit" class="btn" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div id="disclaimer" class="col-7">
+            <h2>Checklist Vistorias</h2>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elite.</p>
+        </div>
+        <div id="form">
+            <p>Preencha o Formulário para mais informações</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="phone" placeholder="Número de Whatsapp">
+                </div>
+                <div class="form-group">
+                    <label for="interest">Motivo do contato</label>
+                    <input id="box" type="text" name="interest" placeholder="Explique o motivo do contato">
+                </div>
+                <input type="submit" class="btn" value="Enviar">
+            </form>
+        </div> -->
+    </header>
+
+    <section id="servicos_">
+        <h2>Nossos serviços:</h2>
+        <div class="servicos">
+            <div class="servico">
+                <!-- <div id="servico-1" class="servico-img"></div> -->
+                <img src="./img-1.jpg" class="servico-img">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="servico">
+                <img src="./img-2.jpg" class="servico-img">
+                <!-- <div id="servico-2" class="servico-img"></div> -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="servico">
+                <img src="./img-3.jpg" class="servico-img">
+                <!-- <div id="servico-3" class="servico-img"></div> -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="about">
+        <div id="about">
+            <h2>Sobre a empresa:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita ratione impedit numquam fugiat illo deserunt cupiditate nulla magnam cumque, saepe soluta magni dolores. Adipisci autem sed temporibus quae? Itaque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <section id="cta">
+                    <button class="btn1"><a href="http://wa.me/5511965007081" target="_blank">Saiba mais</a></button>
+                </section>
+        </div>
+    </section>
+
+    <div class="buttonzap">
+        <a href="https://api.whatsapp.com/send?phone=5511965007081&" class="icon" target="_blank"><i class="fab fa-whatsapp">
+        </i>
+        </a>
+    </div>
+
+    <footer id="footer">
+        <h3>Contato:</h3>
+        <p><span>E-mail:</span> contato@checklistvistorias.eng.br</p>
+        <p><span>Telefone:</span> (11) 96500-7081</p>
+        <p><span>CNPJ:</span> 55.555.555/0001-66</p>
+    </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
  </body>
 </html>
